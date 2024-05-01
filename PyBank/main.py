@@ -1,7 +1,7 @@
 import csv
 
 # Open the CSV file
-with open("PyBank/Resources/budget_data.csv", "r") as csvfile:
+with open("python-challenge-main/PyBank/Resources/budget_data.csv", "r") as csvfile:
     # Create a CSV reader object
     reader = csv.DictReader(csvfile)
     
@@ -63,7 +63,7 @@ Greatest Decrease in profits: {greatest_decrease["date"]} ${greatest_decrease["a
 ''')
 
 # Write the results to a text file
-with open("PyBank/Analysis/analysispybank.txt", "w") as file:
+with open("python-challenge-main/PyBank/Analysis/analysispybank.txt", "w") as file:
     file.write(f'''Financial Analytics:
       
 --------------------------------------------------

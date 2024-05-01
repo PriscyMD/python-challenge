@@ -4,7 +4,7 @@ import csv
 data = []
 
 # Open the CSV file and read the data
-with open("PyPoll/Resources/election_data.csv", "r") as file:
+with open("python-challenge-main/PyPoll/Resources/election_data.csv", "r") as file:
     reader = csv.reader(file)
     next(reader)  # Skip the header row
     for row in reader:
@@ -56,7 +56,7 @@ Winner: {winner_name}
 ''')
 
 # Write the results to a file
-with open("PyPoll/Analysis/analysispypoll.txt", "w") as file:
+with open("python-challenge-main/PyPoll/Analysis/analysispypoll.txt", "w") as file:
     file.write(f'''
 Election Results:
       
